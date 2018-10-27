@@ -134,6 +134,15 @@ class RGB:
 
     def __str__(self):
         return "RGB ({}, {}, {})".format(self._r, self._g, self._b)
+    
+    
+ class RGBA:
+    def __init__(self, r=0, g=0, b=0, a=1.0):
+        self._r = 0
+        self._g = 0
+        self._b = 0
+        self.from_int(r, g, b)
+        self._a = a
 
 
 def clamp(n, lower, upper):
